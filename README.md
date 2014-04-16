@@ -9,14 +9,14 @@ The project requires 4 pairs of IR LED and receptor, an Arduino UNO board, and t
 
 Created, written and maintained by Jeongyoon Lee.
 
-Jeongyoon Lee
-The George Washington University
-B.S. in Biomedical Engineering (Expected May 2014)
+Jeongyoon Lee  
+The George Washington University  
+B.S. in Biomedical Engineering (Expected May 2014)  
 
-4/16/2014: V0.1
-Changed to C++ object-oriented code.
-Calculates time very responsively and accurately.
-Schematic is not prepared.
-Switch is not integrated in the circuit and the program.
-Using very primitive IR LED & receptors, waiting for new one to come.  
-Suggestions are always welcome.  
+4/16/2014: V0.1  
+Changed to C++ object-oriented code.  
+Calculates time very responsively and accurately.  
+Schematic is not prepared.  
+Switch is not integrated in the circuit and the program.  
+Using very primitive IR LED & receptors, waiting for new one to come.    
+Suggestions are always welcome.    
