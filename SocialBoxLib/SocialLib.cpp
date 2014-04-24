@@ -37,6 +37,11 @@ void MyTime::updateTime()
 		currentTime = micros();
 		elapsedTime = currentTime - enterTime;
 	}
+
+	updateSwitch();
+	if (buttonState != HIGH)
+		return;
+
 	if (tempPosition == LEFT)
 		leftTime += elapsedTime;
 	else if (tempPosition == MID)
@@ -111,4 +116,18 @@ void MyTime::updatePosition()
 		position = RIGHT;
 	else if (lastState == INITIAL)
 		position = MID;
+}
+
+void updateSwitch()
+{
+	buttonState = digitalRead(buttonPin);
+	if (buttonState == HIGH){
+	 Serial.print(buttonState);
+	 Serial.println("ON!");}
+ 
+ else{
+	 Serial.print(buttonState);
+	 Serial.println("OFF!");}
+
+ delay(300);
 }

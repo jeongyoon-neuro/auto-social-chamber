@@ -15,11 +15,14 @@
 #define RIGHT 9
 
 extern int irLed;
+extern int buttonPin;
 extern int irDet0;
 extern int irDet1;
 extern int irDet2;
 extern int irDet3;
 extern int minVal;
+extern int buttonState;
+extern int lastButtonState;
 
 class MyTime{
 private:
@@ -42,6 +45,10 @@ public:
 	void printTime(int);
 	void printPosition(int);
 	void printState(int);
-}; 
+};
+
+void updateSwitch();
+
+
 
 #endif
